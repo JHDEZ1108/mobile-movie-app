@@ -7,6 +7,7 @@ import { View, StyleSheet, StatusBar } from "react-native";
 import { useFonts, Vazirmatn_300Light, Vazirmatn_400Regular, Vazirmatn_600SemiBold } from "@expo-google-fonts/vazirmatn";
 import { NotificationProvider } from "@/context/NotificationContext";
 import Toast from "@/components/Toast";
+import './globals.css'
 
 // Prevent the splash screen from hiding automatically
 SplashScreen.preventAutoHideAsync();
