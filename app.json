@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "movies",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -21,7 +21,7 @@
       "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.ico",
-      "name": "Todo List App"
+      "name": "Movie App"
     },
     "plugins": [
       "expo-router",
