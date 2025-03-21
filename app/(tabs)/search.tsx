@@ -8,6 +8,7 @@ import { icons } from "@/constants/icons";
 
 import useFetch from "@/services/useFetch";
 import { fetchMovies } from "@/services/api";
+import { updateSearchCount } from "@/services/appWrite";
 
 import SearchBar from "@/components/SearchBar";
 import MovieDisplayCard from "@/components/MovieCard";
@@ -56,7 +57,11 @@ const Search = () => {
     const timeoutId = setTimeout(async () => {
       if (searchQuery.trim()) {
         await loadMovies();
-
+  
+        // Call updateSearchCount only if there are results
+        if (movies?.length! > 0 && movies?.[0]) {
+          await updateSearchCount(searchQuery, movies[0]);
+        }
       } else {
         reset();
       }
