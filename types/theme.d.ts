@@ -8,14 +8,10 @@ declare module 'ThemeTypes' {
     background: string;
     surface: string;
     error: string;
-    onPrimary: string;
-    onSecondary: string;
-    onBackground: string;
-    onError: string;
-    onSurface: string;
-    disabled: string;
-    border: string;
-    divider: string;
+    onPrimary: string;  // Text color on primary background
+    onBackground: string; // Primary text color on the main background
+    onError: string; // Text color on error backgrounds
+    disabled: string; // Color for text and icons that are not interactive
   }
 
   export interface Theme {

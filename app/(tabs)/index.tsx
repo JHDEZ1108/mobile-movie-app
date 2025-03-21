@@ -10,12 +10,14 @@ export default function Index() {
   const styles = createStyles(theme);
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>Welcome to Your App</Text>
+    <SafeAreaView style={styles.container} className="flex-1 items-center justify-center">
+      <View style={styles.header} className="flex-row justify-between items-center px-4 py-3 w-full border-b">
+        <Text style={styles.headerText}>
+          Welcome to Your App
+        </Text>
         <ThemeToggle />
       </View>
-      <View style={styles.content}>
+      <View className="flex-1 items-center justify-center">
         <Text style={styles.text}>Your main content goes here.</Text>
       </View>
     </SafeAreaView>
@@ -26,31 +28,15 @@ export default function Index() {
 function createStyles(theme: ThemeColors) {
   return StyleSheet.create({
     container: {
-      flex: 1,
       backgroundColor: theme.background,
-      alignItems: 'center',
-      justifyContent: 'center',
     },
     header: {
-      flexDirection: "row",
-      justifyContent: "space-between",
-      alignItems: "center",
-      padding: 15,
-      width: '100%',
-      borderBottomWidth: 1,
-      borderBottomColor: theme.border,
+      borderBottomColor: theme.surface,
     },
     headerText: {
-      fontSize: 22,
       color: theme.onBackground, 
     },
-    content: {
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
     text: {
-      fontSize: 18,
       color: theme.onBackground,
     },
   });

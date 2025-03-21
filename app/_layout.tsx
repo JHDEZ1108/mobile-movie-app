@@ -41,7 +41,14 @@ function RootLayoutContent() {
       />
       <View style={[styles.container, { backgroundColor: theme.background }]}>
         <Stack screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="index" />
+          <Stack.Screen 
+            name="(tabs)"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen 
+            name="movies/[id]"
+            options={{ headerShown: false }}
+          />
         </Stack>
         <Toast />
       </View>
@@ -64,3 +71,4 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
