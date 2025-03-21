@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "mobile-movie-app",
+    "name": "ESMovieApp",
     "slug": "mobile-movie-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "movies",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,14 +13,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#8b9eac"
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#FCFDFD"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.ico",
+      "favicon": "./assets/images/logo.png",
       "name": "Movie App"
     },
     "plugins": [
@@ -28,10 +28,10 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#8b9eac"
+          "backgroundColor": "#FCFDFD"
         }
       ]
     ],
