@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-import { Image, Text, View, StyleSheet, ImageSourcePropType  } from "react-native";
+import { Image, Text, View, StyleSheet, ImageSourcePropType } from "react-native";
 import { useTheme } from '@/context/ThemeProvider'; 
 import { ThemeColors } from 'ThemeTypes';
 
@@ -15,7 +15,7 @@ function createStyles(theme: ThemeColors) {
   return StyleSheet.create({
     text: {
       color: theme.surface,
-    },
+    }
   });
 }
 
@@ -26,8 +26,8 @@ function TabIcon({ focused, icon, title }: TabIconProps) {
   if (focused) {
     return (
       <View
-        className="flex flex-row w-full flex-1 min-w-[114px] min-h-16 mt-4 justify-center items-center rounded-full overflow-hidden"
-        style={{ backgroundColor: theme.primary }}
+        className="flex flex-row w-full flex-1 min-w-[114px] min-h-16 justify-center items-center rounded-full overflow-hidden"
+        style={{ marginTop: 16, backgroundColor: theme.primary }}
       >
         <Image source={icon} tintColor={`${theme.surface}`} className="size-5" />
         <Text style={styles.text} className="text-base font-semibold ml-2">
@@ -38,7 +38,7 @@ function TabIcon({ focused, icon, title }: TabIconProps) {
   }
 
   return (
-    <View className="size-full justify-center items-center mt-4 rounded-full">
+    <View style={{ marginTop: 16 }} className="size-full justify-center items-center rounded-full">
       <Image source={icon} tintColor={`${theme.primary}`} className="size-5" />
     </View>
   );
