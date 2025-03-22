@@ -1,4 +1,4 @@
-import { Link, RelativePathString } from "expo-router";
+import { Link } from "expo-router";
 import { Text, Image, TouchableOpacity, View, StyleSheet } from "react-native";
 import { useTheme } from '@/context/ThemeProvider'; 
 import { ThemeColors } from "ThemeTypes";
@@ -29,7 +29,7 @@ const MovieCard = ({
   }
 
   return (
-    <Link href={`/movie/${String(id)}` as RelativePathString} asChild>
+    <Link href={`/movies/${String(id)}`} asChild>
       <TouchableOpacity className="w-[30%]">
         <Image
           source={{
