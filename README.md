@@ -1,75 +1,66 @@
-# React Native Expo Template
+# Mobile Movie App
 
-## Introduction
-
-This repository serves as a **boilerplate** or **template** for kickstarting React Native projects using Expo. It includes a pre-configured theme toggle for dark and light modes and a basic setup that adheres to best practices in modern mobile app development. This template aims to reduce the initial setup time and provides a clean and organized structure for both new and experienced developers.
+The Mobile Movie App is a cutting-edge mobile application developed using Expo, React Native, TypeScript, and Tailwind CSS. It integrates with Appwrite to fetch and manage real-time movie data, leveraging a popularity algorithm to enhance user engagement by ranking movies based on various metrics. Designed with modern UI/UX principles, the app offers a responsive and visually appealing interface that ensures scalability and top-notch performance.
 
 ## Features
 
-- **Expo Managed Workflow**: Utilizing Expo for easy development, build, and deployment processes.
-- **Dark and Light Theme**: Integrated theme management with a toggle switch.
-- **TypeScript Support**: Ensures code reliability and predictability through strong typing.
-- **Essential Libraries Included**: Contains setup for navigation, state management, and more.
+- **Real-time Data**: Fetch and display up-to-date movie information.
+- **Home Page**: Showcases featured movies and allows users to discover new favorites.
+- **Search Page**: Enables users to search for movies by titles or actors.
+- **Popularity Algorithm**: Tracks user interactions to highlight trending movies based on popularity.
+- **Responsive Design**: Utilizes Tailwind CSS for a flexible and adaptive user interface.
+- **User Engagement**: Analyzes user behavior to improve movie recommendations.
 
-## Getting Started
+## Technology Stack
 
-### Prerequisites
+- **[Expo](https://expo.dev/)**: An open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
+- **[React Native](https://reactnative.dev/)**: A framework for building native apps using React.
+- **[Appwrite](https://appwrite.io/)**: An open-source backend server that simplifies the coding process by providing a set of easy-to-use APIs.
+- **[TypeScript](https://www.typescriptlang.org/)**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for rapidly building custom user interfaces.
 
-Before you begin, ensure you have the following installed on your system:
-- Node.js (LTS version)
-- npm or yarn (as a package manager)
-- Expo CLI
-  ```bash
-  npm install -g expo-cli
-  ```
+## Installation
 
-### Setup Instructions
+To get started with the Mobile Movie App, follow these steps:
 
-1. **Clone the Repository**
-
-   Clone this repository to your local machine using the following command:
+1. **Clone the repository**:
    ```bash
-   git clone git@github.com:Effort-Stack/react-native-expo-template.git
+   git clone git@github.com:JHDEZ1108/mobile-movie-app.git
+   cd mobile-movie-app
    ```
 
-2. **Install Dependencies**
-
-   Navigate into the cloned repository directory and install the required dependencies:
+2. **Install dependencies**:
    ```bash
-   cd react-native-expo-template
    npm install
-   ```
-   or if you prefer using `yarn`:
-   ```bash
+   # or
    yarn install
    ```
 
-3. **Start the Development Server**
-
-   Once the installation is complete, you can start the Expo development server:
+3. **Start the development server**:
    ```bash
    expo start
    ```
-   This command will start the Metro Bundler, which is used to compile and serve your project.
 
-4. **Open the Project**
+4. **Open the project**:
+   - Scan the QR code with the Expo Go app (Android) or the Camera app (iOS).
+   - Use Android Emulator or iOS Simulator.
 
-   - You can open the project on a physical device by scanning the QR code displayed in the terminal or within the Expo Developer Tools in a web browser.
-   - Alternatively, you can use an Android or iOS emulator to run the project.
+5. **Environment Setup**:
+   - Ensure that Appwrite is set up and running as the backend. Follow the [Appwrite installation guide](https://appwrite.io/docs) for setup instructions.
 
-## Usage
+## Architecture and Reusability
 
-This template is designed as a starting point. You can add more components and features as needed for your specific application requirements. Modify, extend, and adapt it to suit your project needs.
+The codebase is designed to promote reusability and maintain a clean architecture:
+- **Components**: Reusable components for UI elements.
+- **Services**: Modular services for handling API calls and business logic.
+- **Utilities**: Utility functions to support common tasks across the app.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Thanks to all contributors who participate in developing and maintaining this template.
-- React Native community for continuous support and inspiration.
-
----
+Distributed under the MIT License. See `LICENSE` for more information.
 
 Happy Coding! 🚀
